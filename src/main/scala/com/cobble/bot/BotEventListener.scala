@@ -1,4 +1,6 @@
-import command.Command
+package com.cobble.bot
+
+import com.cobble.bot.command.Command
 import sx.blah.discord.api.events.EventSubscriber
 import sx.blah.discord.handle.impl.events.{MessageReceivedEvent, ReadyEvent}
 
@@ -16,7 +18,7 @@ class BotEventListener {
             val commandOpt: Option[Command] = CommandRegistry.registry.get(commandName)
             if (commandOpt.isDefined)
                 commandOpt.get.execute(event)
-            MonsterTruckBot.logger.debug("Executed command: " + commandName)
+            MonsterTruckBot.logger.debug("Executed com.cobble.bot.command: " + commandName)
         }
         MonsterTruckBot.logger.debug("Got message: " + event.getMessage.getContent)
     }

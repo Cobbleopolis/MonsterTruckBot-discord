@@ -1,4 +1,6 @@
-import command.{Command, PingCommand}
+package com.cobble.bot
+
+import com.cobble.bot.command.{Command, PingCommand}
 
 object CommandRegistry {
 

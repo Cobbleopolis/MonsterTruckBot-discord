@@ -1,4 +1,5 @@
-package command
+package com.cobble.bot.command
+
 import sx.blah.discord.handle.impl.events.MessageReceivedEvent
 import sx.blah.discord.handle.obj.{IMessage, IUser}
 
