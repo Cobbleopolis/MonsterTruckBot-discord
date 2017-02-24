@@ -4,13 +4,17 @@ organization := "com.cobble.bot"
 
 version := "1.0.0-SNAPSHOT"
 
+val logbackVersion: String = "1.2.1"
+
 resolvers ++= Seq(
     Resolver.jcenterRepo,
     "jitpack" at "https://jitpack.io"
 )
 
 libraryDependencies ++= Seq(
-    "com.github.austinv11" % "Discord4j" % "2.7.0"
+    "com.github.austinv11" % "Discord4j" % "2.7.0",
+    "ch.qos.logback" % "logback-core" % logbackVersion,
+    "ch.qos.logback" % "logback-classic" % logbackVersion
 )
 
 isSnapshot := version.value.toLowerCase.contains("snapshot")

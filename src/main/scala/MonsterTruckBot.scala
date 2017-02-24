@@ -1,7 +1,10 @@
+import org.slf4j.{Logger, LoggerFactory}
 import sx.blah.discord.api.events.EventDispatcher
 import sx.blah.discord.api.{ClientBuilder, IDiscordClient}
 
 object MonsterTruckBot {
+
+    val logger: Logger = LoggerFactory.getLogger("Monster Truck Bot")
 
     private val clientBuilder: ClientBuilder = new ClientBuilder()
 
