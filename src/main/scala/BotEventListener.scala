@@ -11,7 +11,7 @@ class BotEventListener {
 
     @EventSubscriber
     def onMessageReceivedEvent(event: MessageReceivedEvent): Unit = {
-        if (event.getMessage.getContent.startsWith("!")) {
+        if (event.getMessage.getContent.startsWith("!") && !event.getMessage.getAuthor.isBot) {
             val commandName: String = event.getMessage.getContent.split(" ").head.substring(1)
             val commandOpt: Option[Command] = CommandRegistry.registry.get(commandName)
             if (commandOpt.isDefined)
