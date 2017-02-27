@@ -10,7 +10,10 @@ This list is in no particular order of priority
     - [ ] Word Blacklist
     - [ ] Caps
     - [ ] Links
-- [ ] Add commands?
+- [ ] Add commands (alias setup)?
+    - [ ] Add alias
+    - [ ] Set alias
+    - [ ] Delete alias
 
 ### Twitch Specific
 
