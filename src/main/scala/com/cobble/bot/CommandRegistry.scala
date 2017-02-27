@@ -1,6 +1,6 @@
 package com.cobble.bot
 
-import com.cobble.bot.command.{Command, PingCommand}
+import com.cobble.bot.command.{Command, HelpCommand, PingCommand}
 
 object CommandRegistry {
 
@@ -8,7 +8,8 @@ object CommandRegistry {
 
     def registerCommands(): Unit = {
         registry ++= Seq(
-            "ping" -> new PingCommand
+            "ping" -> new PingCommand,
+            "mthelp" -> new HelpCommand
         )
     }
 

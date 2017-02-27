@@ -16,6 +16,7 @@ This list is in no particular order of priority
     - [ ] Add alias
     - [ ] Set alias
     - [ ] Delete alias
+    - [ ] List aliases
 - [ ] Unit tests?
 
 ### Twitch Specific
