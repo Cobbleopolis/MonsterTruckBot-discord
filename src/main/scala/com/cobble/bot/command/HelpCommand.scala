@@ -4,6 +4,9 @@ import com.cobble.bot.{CommandRegistry, MonsterTruckBot}
 import sx.blah.discord.handle.obj.IMessage
 import sx.blah.discord.util.MessageBuilder
 
+/**
+  * The HelpCommand class, this implements the [[Command]] class.
+  */
 class HelpCommand extends Command {
 
     override val name: String = "mthelp"

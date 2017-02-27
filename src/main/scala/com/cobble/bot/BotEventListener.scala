@@ -4,6 +4,9 @@ import com.cobble.bot.command.Command
 import sx.blah.discord.api.events.EventSubscriber
 import sx.blah.discord.handle.impl.events.{MessageReceivedEvent, ReadyEvent}
 
+/**
+  * A class used to listen for events sent by the bot.
+  */
 class BotEventListener {
 
     @EventSubscriber

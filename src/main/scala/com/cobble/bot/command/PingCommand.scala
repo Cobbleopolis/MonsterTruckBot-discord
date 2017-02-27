@@ -5,6 +5,9 @@ import sx.blah.discord.handle.obj.{IMessage, IUser}
 import scala.collection.JavaConverters._
 import scala.collection.mutable
 
+/**
+  * The PingCommand class, this implements the [[Command]] class.
+  */
 class PingCommand extends Command {
 
     override val name: String = "ping"
