@@ -6,11 +6,17 @@ object CommandRegistry {
 
     var registry: Map[String, Command] = Map[String, Command]()
 
+    val pingCommand: PingCommand = new PingCommand
+
+    val helpCommand: HelpCommand = new HelpCommand
+
     def registerCommands(): Unit = {
-        registry ++= Seq(
-            "ping" -> new PingCommand,
-            "mthelp" -> new HelpCommand
-        )
+        registerCommand(pingCommand)
+        registerCommand(helpCommand)
+    }
+
+    def registerCommand(command: Command): Unit = {
+        registry += command.name -> command
     }
 
 }

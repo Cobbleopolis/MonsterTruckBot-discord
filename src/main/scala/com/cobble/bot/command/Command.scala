@@ -4,7 +4,9 @@ import sx.blah.discord.handle.obj.IMessage
 
 trait Command {
 
-    //TODO add ability to set name in command
+    val name: String
+
+    val usageText: String
 
     val helpText: String
 

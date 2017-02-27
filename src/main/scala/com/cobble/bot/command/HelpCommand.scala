@@ -6,21 +6,33 @@ import sx.blah.discord.util.MessageBuilder
 
 class HelpCommand extends Command {
 
-    override val helpText: String = "!mthelp [command]"
+    override val name: String = "mthelp"
+
+    override val usageText: String = "[command]"
+
+    private val helpSuffix: String = s"Use `!$name [command]` to get specific command help."
+
+    override val helpText: String = "Provides a list of commands. " + helpSuffix
 
     override def execute(message: IMessage, args: Array[String]): Unit = {
         val messageBuilder: MessageBuilder = new MessageBuilder(MonsterTruckBot.client)
         if(args.isEmpty){
             messageBuilder.appendContent("Commands:\n")
             CommandRegistry.registry.foreach(kv => {
-                messageBuilder.appendContent(s"\u2022  !${kv._1}\n")
+                messageBuilder.appendContent(s"\u2022 !${kv._1}\n")
             })
+            messageBuilder.appendContent("\n" + helpSuffix)
         } else {
             val commandOpt: Option[Command] = CommandRegistry.registry.get(args.head)
-            if (commandOpt.isDefined)
-                messageBuilder.appendContent(commandOpt.get.helpText)
-            else
-                messageBuilder.appendContent(s"Command ${args.head} not found. Use the help command with out any arguments to see a list of commands.")
+            if (commandOpt.isDefined) {
+                val command: Command = commandOpt.get
+                messageBuilder.appendContent(s"`!${command.name}` Command:\n\n")
+                    .appendContent(s"Usage:\n")
+                    .appendContent(s"\t`!${command.name} ${command.usageText}`\n\n")
+                    .appendContent(s"Description:\n")
+                    .appendContent(s"\t${command.helpText}")
+            } else
+                messageBuilder.appendContent(s"Command `${args.head}` not found. Use `!$name` to see a full list of commands. " + helpSuffix)
         }
         messageBuilder.withChannel(MonsterTruckBot.client.getOrCreatePMChannel(message.getAuthor))
         messageBuilder.build()
