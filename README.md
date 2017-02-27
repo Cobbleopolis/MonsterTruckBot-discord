@@ -6,6 +6,8 @@ Custom bot written for the Monster Truck Rally
 ## TODO
 This list is in no particular order of priority
 
+- [ ] Help command
+- [ ] Command permissions 
 - [ ] Chat Moderation
     - [ ] Word Blacklist
     - [ ] Caps
@@ -14,6 +16,7 @@ This list is in no particular order of priority
     - [ ] Add alias
     - [ ] Set alias
     - [ ] Delete alias
+- [ ] Unit tests?
 
 ### Twitch Specific
 
