@@ -6,7 +6,7 @@ Custom bot written for the Monster Truck Rally
 ## TODO
 This list is in no particular order of priority
 
-- [ ] Help command
+- [x] Help command
 - [ ] Command permissions 
 - [ ] Chat Moderation
     - [ ] Word Blacklist
