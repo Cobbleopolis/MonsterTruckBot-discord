@@ -1,11 +1,11 @@
 package com.cobble.bot.command
 
-import sx.blah.discord.handle.impl.events.MessageReceivedEvent
+import sx.blah.discord.handle.obj.IMessage
 
 trait Command {
 
-    val usageText: String
+    val helpText: String
 
-    def execute(event: MessageReceivedEvent): Unit
+    def execute(message: IMessage, args: Array[String]): Unit
 
 }
