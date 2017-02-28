@@ -18,7 +18,7 @@ This list is in no particular order of priority
     - [ ] Delete alias
     - [ ] List aliases
 - [ ] Unit tests?
-- [ ] SOS command 
+- [x] SOS command 
     - Sends dm to all mods w/ person's name who asked for help. Allows people to anon call mods quickly.
 
 ### Twitch Specific
