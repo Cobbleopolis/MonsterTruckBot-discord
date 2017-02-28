@@ -5,7 +5,10 @@ import sx.blah.discord.handle.obj.IMessage
 import sx.blah.discord.util.MessageBuilder
 
 /**
-  * The HelpCommand class, this implements the [[Command]] class.
+  * The HelpCommand class, this implements the [[Command]] trait.
+  * @author Cobbleopolis
+  * @version 1.0.0
+  * @since 1.0.0
   */
 class HelpCommand extends Command {
 

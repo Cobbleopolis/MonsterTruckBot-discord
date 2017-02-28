@@ -6,6 +6,9 @@ import sx.blah.discord.handle.impl.events.{MessageReceivedEvent, ReadyEvent}
 
 /**
   * A class used to listen for events sent by the bot.
+  * @author Cobbleopolis
+  * @version 1.0.0
+  * @since 1.0.0
   */
 class BotEventListener {
 

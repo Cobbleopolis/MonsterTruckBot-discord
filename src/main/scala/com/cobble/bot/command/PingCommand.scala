@@ -6,7 +6,10 @@ import scala.collection.JavaConverters._
 import scala.collection.mutable
 
 /**
-  * The PingCommand class, this implements the [[Command]] class.
+  * The PingCommand class, this implements the [[Command]] trait.
+  * @author Cobbleopolis
+  * @version 1.0.0
+  * @since 1.0.0
   */
 class PingCommand extends Command {
 

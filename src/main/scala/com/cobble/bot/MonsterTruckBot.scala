@@ -6,6 +6,9 @@ import sx.blah.discord.api.{ClientBuilder, IDiscordClient}
 
 /**
   * The main object of the Monster Truck Bot.
+  * @author Cobbleopolis
+  * @version 1.0.0
+  * @since 1.0.0
   */
 object MonsterTruckBot {
 

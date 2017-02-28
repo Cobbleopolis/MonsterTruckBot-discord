@@ -151,15 +151,21 @@
                         </a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="HelpCommand.html" title="The HelpCommand class, this implements the Command class."></a>
-                        <a href="HelpCommand.html" title="The HelpCommand class, this implements the Command class.">
+                        <a class="class" href="HelpCommand.html" title="The HelpCommand class, this implements the Command trait."></a>
+                        <a href="HelpCommand.html" title="The HelpCommand class, this implements the Command trait.">
                           HelpCommand
                         </a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="PingCommand.html" title="The PingCommand class, this implements the Command class."></a>
-                        <a href="PingCommand.html" title="The PingCommand class, this implements the Command class.">
+                        <a class="class" href="PingCommand.html" title="The PingCommand class, this implements the Command trait."></a>
+                        <a href="PingCommand.html" title="The PingCommand class, this implements the Command trait.">
                           PingCommand
+                        </a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="SOSCommand.html" title="The SOSCommand class, this implements the Command trait."></a>
+                        <a href="SOSCommand.html" title="The SOSCommand class, this implements the Command trait.">
+                          SOSCommand
                         </a>
                       </li>
               </ul>
@@ -198,7 +204,7 @@
             <span class="toggle">
               Known Subclasses
             </span>
-            <div class="subClasses hiddenContent"><a href="HelpCommand.html" class="extype" name="com.cobble.bot.command.HelpCommand">HelpCommand</a>, <a href="PingCommand.html" class="extype" name="com.cobble.bot.command.PingCommand">PingCommand</a></div>
+            <div class="subClasses hiddenContent"><a href="HelpCommand.html" class="extype" name="com.cobble.bot.command.HelpCommand">HelpCommand</a>, <a href="PingCommand.html" class="extype" name="com.cobble.bot.command.PingCommand">PingCommand</a>, <a href="SOSCommand.html" class="extype" name="com.cobble.bot.command.SOSCommand">SOSCommand</a></div>
           </div></div>
         
 
@@ -248,7 +254,24 @@
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="com.cobble.bot.command.Command#execute" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="com.cobble.bot.command.Command#briefHelpText" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="briefHelpText:String"></a>
+      <span class="permalink">
+      <a href="../../../../com/cobble/bot/command/Command.html#briefHelpText:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">briefHelpText</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Gives a brief description of what the command does.</p><div class="fullcomment"><div class="comment cmt"><p>Gives a brief description of what the command does.</p><p>This is displayed in the <a href="HelpCommand.html" class="extype" name="com.cobble.bot.command.HelpCommand">HelpCommand</a> when it is given no arguments.
+</p></div></div>
+    </li><li name="com.cobble.bot.command.Command#execute" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="execute(message:sx.blah.discord.handle.obj.IMessage,args:Array[String]):Unit"></a><a id="execute(IMessage,Array[String]):Unit"></a>
       <span class="permalink">
       <a href="../../../../com/cobble/bot/command/Command.html#execute(message:sx.blah.discord.handle.obj.IMessage,args:Array[String]):Unit" title="Permalink">
@@ -279,7 +302,7 @@
         <span class="name">helpText</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
-      <p class="shortcomment cmt">Gives a brief description of what the command does and how to use it.</p>
+      <p class="shortcomment cmt">Gives a description of what the command does and how to use it.</p>
     </li><li name="com.cobble.bot.command.Command#name" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="name:String"></a>
       <span class="permalink">

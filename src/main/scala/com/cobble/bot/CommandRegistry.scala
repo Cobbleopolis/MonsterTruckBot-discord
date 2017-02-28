@@ -4,6 +4,9 @@ import com.cobble.bot.command.{Command, HelpCommand, PingCommand, SOSCommand}
 
 /**
   * The object used to maintain the commands registered to the bot.
+  * @author Cobbleopolis
+  * @version 1.0.0
+  * @since 1.0.0
   */
 object CommandRegistry {
 

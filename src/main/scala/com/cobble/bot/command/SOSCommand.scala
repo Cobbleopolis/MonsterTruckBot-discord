@@ -6,7 +6,10 @@ import sx.blah.discord.handle.obj.{IGuild, IMessage}
 import scala.collection.JavaConverters._
 
 /**
-  * The SOSCommand class, this implements the [[Command]] class.
+  * The SOSCommand class, this implements the [[Command]] trait.
+  * @author Cobbleopolis
+  * @version 1.0.0
+  * @since 1.0.0
   */
 class SOSCommand extends Command {
 
