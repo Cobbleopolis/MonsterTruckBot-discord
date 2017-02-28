@@ -23,9 +23,10 @@ class BotEventListener {
             val contentArray: Array[String] = event.getMessage.getContent.split(" ")
             val commandName: String = contentArray.head.substring(1)
             val commandOpt: Option[Command] = CommandRegistry.registry.get(commandName)
-            if (commandOpt.isDefined)
+            if (commandOpt.isDefined) {
                 commandOpt.get.execute(event.getMessage, contentArray.tail)
-            MonsterTruckBot.logger.debug("Executed com.cobble.bot.command: " + commandName)
+                MonsterTruckBot.logger.debug("Executed com.cobble.bot.command: " + commandName)
+            }
         }
     }
 
