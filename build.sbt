@@ -8,10 +8,13 @@ val logbackVersion: String = "1.2.1"
 
 val discord4JVersion: String = "2.7.0"
 
+val nettyVersion: String = "4.1.8.Final"
+
 val deps: Seq[ModuleID] = Seq(
     "com.github.austinv11" % "Discord4j" % discord4JVersion,
     "ch.qos.logback" % "logback-core" % logbackVersion,
-    "ch.qos.logback" % "logback-classic" % logbackVersion
+    "ch.qos.logback" % "logback-classic" % logbackVersion,
+    "io.netty" % "netty-all" % nettyVersion
 )
 
 resolvers ++= Seq(
