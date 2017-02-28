@@ -23,9 +23,16 @@ trait Command {
     val usageText: String
 
     /**
-      * Gives a brief description of what the command does and how to use it.
+      * Gives a description of what the command does and how to use it.
       */
     val helpText: String
+
+    /**
+      * Gives a brief description of what the command does.
+      *
+      * This is displayed in the [[HelpCommand]] when it is given no arguments.
+      */
+    val briefHelpText: String
 
     /**
       * Called when the command is executed.

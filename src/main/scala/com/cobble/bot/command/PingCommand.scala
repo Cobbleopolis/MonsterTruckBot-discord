@@ -16,6 +16,8 @@ class PingCommand extends Command {
 
     override val helpText: String = "A simple command to ping the bot to make sure it is alive."
 
+    override val briefHelpText: String = helpText
+
     override def execute(message: IMessage, args: Array[String]): Unit = {
         val mentions: mutable.Buffer[IUser] = message.getMentions.asScala
         if (mentions.nonEmpty)

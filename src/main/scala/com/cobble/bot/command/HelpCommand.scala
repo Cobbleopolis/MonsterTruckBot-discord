@@ -17,12 +17,14 @@ class HelpCommand extends Command {
 
     override val helpText: String = "Provides a list of commands. " + helpSuffix
 
+    override val briefHelpText: String = "Provides a list of commands."
+
     override def execute(message: IMessage, args: Array[String]): Unit = {
         val messageBuilder: MessageBuilder = new MessageBuilder(MonsterTruckBot.client)
         if(args.isEmpty){
             messageBuilder.appendContent("Commands:\n")
             CommandRegistry.registry.foreach(kv => {
-                messageBuilder.appendContent(s"\u2022 !${kv._1}\n")
+                messageBuilder.appendContent(s"\t\u2022 !${kv._1} - ${kv._2.briefHelpText}\n")
             })
             messageBuilder.appendContent("\n" + helpSuffix)
         } else {
