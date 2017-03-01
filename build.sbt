@@ -10,11 +10,16 @@ val discord4JVersion: String = "2.7.0"
 
 val nettyVersion: String = "4.1.8.Final"
 
+val slickVersion: String = "3.2.0"
+
 val deps: Seq[ModuleID] = Seq(
     "com.github.austinv11" % "Discord4j" % discord4JVersion,
     "ch.qos.logback" % "logback-core" % logbackVersion,
     "ch.qos.logback" % "logback-classic" % logbackVersion,
-    "io.netty" % "netty-all" % nettyVersion
+    "io.netty" % "netty-all" % nettyVersion,
+    "mysql" % "mysql-connector-java" % "5.1.36",
+    "com.typesafe.slick" %% "slick" % slickVersion,
+    "com.typesafe.slick" %% "slick-hikaricp" % slickVersion
 )
 
 resolvers ++= Seq(
