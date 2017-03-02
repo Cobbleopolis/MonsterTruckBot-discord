@@ -1,11 +1,17 @@
 package com.cobble.bot
 
 import com.cobble.bot.command.Command
+import com.cobble.bot.db.Tables.BotInstance
+import com.cobble.bot.util.DBUtil
 import sx.blah.discord.api.events.EventSubscriber
 import sx.blah.discord.handle.impl.events.{MessageReceivedEvent, ReadyEvent}
 
+import scala.collection.JavaConverters._
+
+
 /**
   * A class used to listen for events sent by the bot.
+  *
   * @author Cobbleopolis
   * @version 1.0.0
   * @since 1.0.0
@@ -15,6 +21,7 @@ class BotEventListener {
     @EventSubscriber
     def onReadyEvent(event: ReadyEvent): Unit = {
         MonsterTruckBot.logger.info("Monster Truck Bot ready")
+        DBUtil.insertBotInstances(MonsterTruckBot.client.getGuilds.asScala.map(guild => BotInstance(guild.getID)): _*)
     }
 
     @EventSubscriber
