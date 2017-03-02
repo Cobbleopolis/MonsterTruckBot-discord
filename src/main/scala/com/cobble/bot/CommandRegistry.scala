@@ -1,6 +1,6 @@
 package com.cobble.bot
 
-import com.cobble.bot.command.{Command, HelpCommand, PingCommand, SOSCommand}
+import com.cobble.bot.command._
 
 /**
   * The object used to maintain the commands registered to the bot.
@@ -31,12 +31,18 @@ object CommandRegistry {
     val sosCommand: SOSCommand = new SOSCommand
 
     /**
+      * An instance of the [[command.SetModRoleCommand]]
+      */
+    val setModRoleCommand: SetModRoleCommand = new SetModRoleCommand
+
+    /**
       * Registers all of the [[command.Command]]s for the bot.
       */
     def registerCommands(): Unit = {
         registerCommand(pingCommand)
         registerCommand(helpCommand)
         registerCommand(sosCommand)
+        registerCommand(setModRoleCommand)
     }
 
     /**

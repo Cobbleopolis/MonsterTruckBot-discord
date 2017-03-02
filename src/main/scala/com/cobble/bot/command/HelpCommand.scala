@@ -31,9 +31,9 @@ class HelpCommand extends Command {
             })
             messageBuilder.appendContent("\n" + helpSuffix)
         } else {
-            val commandOpt: Option[Command] = CommandRegistry.registry.get(args.head)
-            if (commandOpt.isDefined) {
-                val command: Command = commandOpt.get
+            val maybeCommand: Option[Command] = CommandRegistry.registry.get(args.head)
+            if (maybeCommand.isDefined) {
+                val command: Command = maybeCommand.get
                 messageBuilder.appendContent(s"`!${command.name}` Command:\n\n")
                     .appendContent(s"Usage:\n")
                     .appendContent(s"\t`!${command.name} ${command.usageText}`\n\n")

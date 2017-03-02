@@ -29,9 +29,9 @@ class BotEventListener {
         if (event.getMessage.getContent.startsWith("!") && !event.getMessage.getAuthor.isBot) {
             val contentArray: Array[String] = event.getMessage.getContent.split(" ")
             val commandName: String = contentArray.head.substring(1)
-            val commandOpt: Option[Command] = CommandRegistry.registry.get(commandName)
-            if (commandOpt.isDefined) {
-                commandOpt.get.execute(event.getMessage, contentArray.tail)
+            val maybeCommand: Option[Command] = CommandRegistry.registry.get(commandName)
+            if (maybeCommand.isDefined) {
+                maybeCommand.get.execute(event.getMessage, contentArray.tail)
                 MonsterTruckBot.logger.debug("Executed com.cobble.bot.command: " + commandName)
             }
         }
