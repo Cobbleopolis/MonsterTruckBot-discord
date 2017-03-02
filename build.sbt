@@ -17,7 +17,7 @@ val deps: Seq[ModuleID] = Seq(
     "ch.qos.logback" % "logback-core" % logbackVersion,
     "ch.qos.logback" % "logback-classic" % logbackVersion,
     "io.netty" % "netty-all" % nettyVersion,
-    "mysql" % "mysql-connector-java" % "5.1.36",
+    "org.postgresql" % "postgresql" % "42.0.0.jre7",
     "com.typesafe.slick" %% "slick" % slickVersion,
     "com.typesafe.slick" %% "slick-hikaricp" % slickVersion
 )
