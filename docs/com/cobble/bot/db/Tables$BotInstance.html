@@ -125,10 +125,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="com.cobble">cobble</a></dd></dl></div>
-    </li><li name="com.cobble.bot.command" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="command"></a><a id="command:command"></a>
+    </li><li name="com.cobble.bot.db" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="db"></a><a id="db:db"></a>
       <span class="permalink">
-      <a href="../../../com/cobble/bot/index.html#command" title="Permalink">
+      <a href="../../../com/cobble/bot/index.html#db" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -138,40 +138,40 @@
       </span>
       <span class="symbol">
         <a title="" href="index.html">
-              <span class="name">command</span>
+              <span class="name">db</span>
             </a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.cobble.bot">bot</a></dd></dl></div>
-    </li><li class="current-entities indented4">
+    </li><li name="com.cobble.bot.db.Tables" visbl="pub" class="indented5 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TablesextendsAnyRef"></a><a id="Tables:Tables"></a>
+      <span class="permalink">
+      <a href="../../../../com/cobble/bot/db/index.html#TablesextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Slick data model trait for extension, choice of backend or usage in the cake pattern." href="Tables.html">
+              <span class="name">Tables</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Slick data model trait for extension, choice of backend or usage in the cake pattern.</p><div class="fullcomment"><div class="comment cmt"><p>Slick data model trait for extension, choice of backend or usage in the cake pattern. (Make sure to initialize this late.)</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="com.cobble.bot.db">db</a></dd></dl></div>
+    </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="trait" href="Command.html" title="A trait that should be implemented by any command that is going to be used by the bot."></a>
-                        <a href="Command.html" title="A trait that should be implemented by any command that is going to be used by the bot.">
-                          Command
+                        <a class="class" href="" title="Entity class storing rows of table BotInstances"></a>
+                        <a href="" title="Entity class storing rows of table BotInstances">
+                          BotInstance
                         </a>
-                      </li><li class="current-entities indented4">
+                      </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="class" href="HelpCommand.html" title="The HelpCommand class, this implements the Command trait."></a>
-                        <a href="HelpCommand.html" title="The HelpCommand class, this implements the Command trait.">
-                          HelpCommand
-                        </a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="PingCommand.html" title="The PingCommand class, this implements the Command trait."></a>
-                        <a href="PingCommand.html" title="The PingCommand class, this implements the Command trait.">
-                          PingCommand
-                        </a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="" title="The SOSCommand class, this implements the Command trait."></a>
-                        <a href="" title="The SOSCommand class, this implements the Command trait.">
-                          SOSCommand
-                        </a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="SetModRoleCommand.html" title="The SetModRoleCommand class, this implements the Command trait."></a>
-                        <a href="SetModRoleCommand.html" title="The SetModRoleCommand class, this implements the Command trait.">
-                          SetModRoleCommand
+                        <a class="class" href="Tables$BotInstances.html" title="Table description of table bot_instances."></a>
+                        <a href="Tables$BotInstances.html" title="Table description of table bot_instances.">
+                          BotInstances
                         </a>
                       </li>
               </ul>
@@ -181,9 +181,9 @@
             <body class="class type">
       <div id="definition">
         <div class="big-circle class">c</div>
-        <p id="owner"><a href="../../../index.html" class="extype" name="com">com</a>.<a href="../../index.html" class="extype" name="com.cobble">cobble</a>.<a href="../index.html" class="extype" name="com.cobble.bot">bot</a>.<a href="index.html" class="extype" name="com.cobble.bot.command">command</a></p>
-        <h1>SOSCommand<span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html" title="Permalink">
+        <p id="owner"><a href="../../../index.html" class="extype" name="com">com</a>.<a href="../../index.html" class="extype" name="com.cobble">cobble</a>.<a href="../index.html" class="extype" name="com.cobble.bot">bot</a>.<a href="index.html" class="extype" name="com.cobble.bot.db">db</a>.<a href="Tables.html" class="extype" name="com.cobble.bot.db.Tables">Tables</a></p>
+        <h1>BotInstance<span class="permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -192,21 +192,20 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">SOSCommand</span><span class="result"> extends <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a></span>
+        <span class="name">BotInstance</span><span class="params">(<span name="guildId">guildId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="moderatorRoleId">moderatorRoleId: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The SOSCommand class, this implements the <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a> trait.
-</p></div><dl class="attributes block"> <dt>Version</dt><dd><p>1.0.0</p></dd><dt>Since</dt><dd><p>1.0.0</p></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Entity class storing rows of table BotInstances</p></div><dl class="paramcmts block"><dt class="param">guildId</dt><dd class="cmt"><p>Database column guild_id SqlType(varchar), PrimaryKey, Length(256,true)</p></dd><dt class="param">moderatorRoleId</dt><dd class="cmt"><p>Database column moderator_role_id SqlType(varchar), Length(256,true), Default(None)</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -232,7 +231,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="com.cobble.bot.command.SOSCommand"><span>SOSCommand</span></li><li class="in" name="com.cobble.bot.command.Command"><span>Command</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="com.cobble.bot.db.Tables.BotInstance"><span>BotInstance</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -252,10 +251,10 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="com.cobble.bot.command.SOSCommand#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;():com.cobble.bot.command.SOSCommand"></a><a id="&lt;init&gt;:SOSCommand"></a>
+              <ol><li name="com.cobble.bot.db.Tables.BotInstance#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(guildId:String,moderatorRoleId:Option[String]):Tables.this.BotInstance"></a><a id="&lt;init&gt;:BotInstance"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#&lt;init&gt;():com.cobble.bot.command.SOSCommand" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#&lt;init&gt;(guildId:String,moderatorRoleId:Option[String]):Tables.this.BotInstance" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -264,10 +263,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">SOSCommand</span><span class="params">()</span>
+        <span class="name">BotInstance</span><span class="params">(<span name="guildId">guildId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="moderatorRoleId">moderatorRoleId: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span>
       </span>
       
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">guildId</dt><dd class="cmt"><p>Database column guild_id SqlType(varchar), PrimaryKey, Length(256,true)</p></dd><dt class="param">moderatorRoleId</dt><dd class="cmt"><p>Database column moderator_role_id SqlType(varchar), Length(256,true), Default(None)</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -281,7 +280,7 @@
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -297,7 +296,7 @@
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html###():Int" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -313,7 +312,7 @@
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -329,7 +328,7 @@
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -342,26 +341,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.cobble.bot.command.SOSCommand#briefHelpText" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="briefHelpText:String"></a>
-      <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#briefHelpText:String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">briefHelpText</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cobble.bot.command.SOSCommand">SOSCommand</a> → <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#clone():Object" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -383,7 +366,7 @@
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -396,42 +379,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#equals(x$1:Any):Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.cobble.bot.command.SOSCommand#execute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="execute(message:sx.blah.discord.handle.obj.IMessage,args:Array[String]):Unit"></a><a id="execute(IMessage,Array[String]):Unit"></a>
-      <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#execute(message:sx.blah.discord.handle.obj.IMessage,args:Array[String]):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">execute</span><span class="params">(<span name="message">message: <a href="https://jitpack.io/com/github/austinv11/Discord4j/2.7.0/javadoc/index.html#sx.blah.discord.handle.obj.IMessage" class="extype" target="_top">IMessage</a></span>, <span name="args">args: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Array" class="extype" target="_top">Array</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Called when the command is executed.</p><div class="fullcomment"><div class="comment cmt"><p>Called when the command is executed.</p></div><dl class="paramcmts block"><dt class="param">message</dt><dd class="cmt"><p>The message object that called the command.</p></dd><dt class="param">args</dt><dd class="cmt"><p>The arguments that are passed to the command. This can be empty.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cobble.bot.command.SOSCommand">SOSCommand</a> → <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#finalize():Unit" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -453,7 +404,7 @@
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#getClass():Class[_]" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -466,26 +417,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
+    </li><li name="com.cobble.bot.db.Tables.BotInstance#guildId" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="guildId:String"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#hashCode():Int" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.cobble.bot.command.SOSCommand#helpText" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="helpText:String"></a>
-      <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#helpText:String" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#guildId:String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -494,14 +429,14 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">helpText</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">guildId</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cobble.bot.command.SOSCommand">SOSCommand</a> → <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a></dd></dl></div>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -514,10 +449,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.cobble.bot.command.SOSCommand#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="name:String"></a>
+    </li><li name="com.cobble.bot.db.Tables.BotInstance#moderatorRoleId" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="moderatorRoleId:Option[String]"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#name:String" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#moderatorRoleId:Option[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -526,14 +461,14 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">moderatorRoleId</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cobble.bot.command.SOSCommand">SOSCommand</a> → <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a></dd></dl></div>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -549,7 +484,7 @@
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#notify():Unit" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -565,7 +500,7 @@
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#notifyAll():Unit" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -581,7 +516,7 @@
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -594,42 +529,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#toString():String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.cobble.bot.command.SOSCommand#usageText" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="usageText:String"></a>
-      <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#usageText:String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">usageText</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cobble.bot.command.SOSCommand">SOSCommand</a> → <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#wait():Unit" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -651,7 +554,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -673,7 +576,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/command/SOSCommand.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables$BotInstance.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -702,8 +605,14 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="com.cobble.bot.command.Command">
-              <h3>Inherited from <a href="Command.html" class="extype" name="com.cobble.bot.command.Command">Command</a></h3>
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
