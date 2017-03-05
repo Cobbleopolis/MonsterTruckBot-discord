@@ -20,6 +20,7 @@ This list is in no particular order of priority
 - [ ] Unit tests?
 - [x] SOS command 
     - Sends dm to all mods w/ person's name who asked for help. Allows people to anon call mods quickly.
+- [ ] Use cache ([EHCache](http://www.ehcache.org/)?) to cache database results
 
 ### Twitch Specific
 
