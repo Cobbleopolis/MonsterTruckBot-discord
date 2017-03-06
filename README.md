@@ -21,6 +21,22 @@ This list is in no particular order of priority
 - [x] SOS command 
     - Sends dm to all mods w/ person's name who asked for help. Allows people to anon call mods quickly.
 - [ ] Use cache ([EHCache](http://www.ehcache.org/)?) to cache database results
+- [ ] Join message
+    - [ ] Custom channel support
+    - [ ] Custom message
+- [ ] Leave message
+    - [ ] Custom channel support
+    - [ ] Custom message 
+- [ ] Plugin setup
+    - [ ] Automatic plugin registration
+    - [ ] Register commands
+    - [ ] Register settings
+    - [ ] Separate settings tables in database
+        - [ ] Insert the user's setting row when the plugin is enabled
+        - [ ] Run each table creation on plugin registration
+- [ ] Rework config setup to use a key/value setup 
+- [ ] Use a separate table in the database for each plugin
+- [ ] Use resource markdown files for command help?
 
 ### Twitch Specific
 
