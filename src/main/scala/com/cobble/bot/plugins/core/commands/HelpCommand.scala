@@ -1,11 +1,14 @@
-package com.cobble.bot.command
+package com.cobble.bot.plugins.core.commands
 
-import com.cobble.bot.{CommandRegistry, MonsterTruckBot}
+import com.cobble.bot.MonsterTruckBot
+import com.cobble.bot.api.Command
+import com.cobble.bot.core.CommandRegistry
 import sx.blah.discord.handle.obj.IMessage
 import sx.blah.discord.util.MessageBuilder
 
 /**
   * The HelpCommand class, this implements the [[Command]] trait.
+  *
   * @author Cobbleopolis
   * @version 1.0.0
   * @since 1.0.0
@@ -24,7 +27,7 @@ class HelpCommand extends Command {
 
     override def execute(message: IMessage, args: Array[String]): Unit = {
         val messageBuilder: MessageBuilder = new MessageBuilder(MonsterTruckBot.client)
-        if(args.isEmpty){
+        if (args.isEmpty) {
             messageBuilder.appendContent("Commands:\n")
             CommandRegistry.registry.foreach(kv => {
                 messageBuilder.appendContent(s"\t\u2022 !${kv._1} - ${kv._2.briefHelpText}\n")

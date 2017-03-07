@@ -1,9 +1,11 @@
-package com.cobble.bot.command
+package com.cobble.bot.api
 
+import com.cobble.bot.plugins.core.commands.HelpCommand
 import sx.blah.discord.handle.obj.IMessage
 
 /**
   * A trait that should be implemented by any command that is going to be used by the bot.
+  *
   * @author Cobbleopolis
   * @version 1.0.0
   * @since 1.0.0
@@ -36,8 +38,9 @@ trait Command {
 
     /**
       * Called when the command is executed.
+      *
       * @param message The message object that called the command.
-      * @param args The arguments that are passed to the command. This can be empty.
+      * @param args    The arguments that are passed to the command. This can be empty.
       */
     def execute(message: IMessage, args: Array[String]): Unit
 

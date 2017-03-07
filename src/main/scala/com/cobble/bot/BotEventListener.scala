@@ -1,6 +1,7 @@
 package com.cobble.bot
 
-import com.cobble.bot.command.Command
+import com.cobble.bot.api.Command
+import com.cobble.bot.core.CommandRegistry
 import com.cobble.bot.db.Tables.BotInstance
 import com.cobble.bot.util.DBUtil
 import sx.blah.discord.api.events.EventSubscriber

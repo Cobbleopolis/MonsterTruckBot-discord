@@ -27,9 +27,9 @@ This list is in no particular order of priority
 - [ ] Leave message
     - [ ] Custom channel support
     - [ ] Custom message 
-- [ ] Plugin setup
+- [x] Plugin setup
     - [ ] Automatic plugin registration
-    - [ ] Register commands
+    - [x] Register commands
     - [ ] Register settings
     - [ ] Separate settings tables in database
         - [ ] Insert the user's setting row when the plugin is enabled

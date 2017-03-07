@@ -1,6 +1,7 @@
-package com.cobble.bot.command
+package com.cobble.bot.plugins.core.commands
 
 import com.cobble.bot.MonsterTruckBot
+import com.cobble.bot.api.Command
 import com.cobble.bot.util.{DBUtil, MessageUtil}
 import sx.blah.discord.handle.obj.{IGuild, IMessage, IUser}
 
