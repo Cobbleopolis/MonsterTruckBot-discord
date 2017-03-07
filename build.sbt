@@ -22,6 +22,8 @@ val deps: Seq[ModuleID] = Seq(
     "com.typesafe.slick" %% "slick-hikaricp" % slickVersion
 )
 
+//libraryDependencies += "com.typesafe.slick" %% "slick-codegen" % slickVersion
+
 resolvers ++= Seq(
     Resolver.jcenterRepo,
     "jitpack" at "https://jitpack.io"

@@ -19,7 +19,6 @@ This list is in no particular order of priority
         - [ ] Insert the user's setting row when the plugin is enabled
         - [ ] Run each table creation on plugin registration
 - [ ] Rework config setup to use a key/value setup 
-- [ ] Use a separate table in the database for each plugin
 - [ ] Use resource markdown files for command help?
 
 ### Core Plugin

@@ -1,7 +1,8 @@
 package com.cobble.bot.plugins.core.commands
 
 import com.cobble.bot.api.Command
-import com.cobble.bot.util.{DBUtil, MessageUtil}
+import com.cobble.bot.util.MessageUtil
+import com.cobble.bot.util.db.CoreSettingsUtil
 import sx.blah.discord.handle.obj.{IMessage, IRole}
 
 import scala.collection.JavaConverters._
@@ -31,13 +32,13 @@ class SetModRoleCommand extends Command {
         val maybeModRole: Option[IRole] = message.getRoleMentions.asScala.headOption
         if (maybeModRole.isDefined) {
             val modRole = maybeModRole.get
-            val setModRoleFuture = DBUtil.setGuildModeratorRole(message.getGuild.getID, modRole)
+            val setModRoleFuture = CoreSettingsUtil.setGuildModeratorRole(message.getGuild.getID, modRole.getID)
             setModRoleFuture.onComplete {
                 case Success(numUpdated) =>
-                        if (numUpdated == 1)
-                            message.getChannel.sendMessage(MessageUtil.formatMessage(message.getAuthor.mention, s"Successfully set moderator to ${modRole.mention}"))
-                        else if (numUpdated == 0)
-                            message.getChannel.sendMessage(MessageUtil.formatMessage(message.getAuthor.mention, s"There was an issue setting the moderator role for this server. Perhaps this server's id is not in the database. So I don't know how you called this command..."))
+                    if (numUpdated == 1)
+                        message.getChannel.sendMessage(MessageUtil.formatMessage(message.getAuthor.mention, s"Successfully set moderator to ${modRole.mention}"))
+                    else if (numUpdated == 0)
+                        message.getChannel.sendMessage(MessageUtil.formatMessage(message.getAuthor.mention, s"There was an issue setting the moderator role for this server. Perhaps this server's id is not in the database. So I don't know how you called this command..."))
                 case Failure(t) =>
                     message.getChannel.sendMessage(MessageUtil.getErrorMessage(message.getAuthor.mention, s"There was an issue setting moderator to ${modRole.mention}", t))
             }

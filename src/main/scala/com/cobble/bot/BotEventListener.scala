@@ -2,8 +2,8 @@ package com.cobble.bot
 
 import com.cobble.bot.api.Command
 import com.cobble.bot.core.CommandRegistry
-import com.cobble.bot.db.Tables.BotInstance
-import com.cobble.bot.util.DBUtil
+import com.cobble.bot.db.Tables.BotInstancesRow
+import com.cobble.bot.util.db.BotInstanceUtil
 import sx.blah.discord.api.events.EventSubscriber
 import sx.blah.discord.handle.impl.events.{MessageReceivedEvent, ReadyEvent}
 
@@ -22,7 +22,7 @@ class BotEventListener {
     @EventSubscriber
     def onReadyEvent(event: ReadyEvent): Unit = {
         MonsterTruckBot.logger.info("Monster Truck Bot ready")
-        DBUtil.insertBotInstances(MonsterTruckBot.client.getGuilds.asScala.map(guild => BotInstance(guild.getID)): _*)
+        BotInstanceUtil.insertBotInstances(MonsterTruckBot.client.getGuilds.asScala.map(guild => BotInstancesRow(guild.getID)): _*)
     }
 
     @EventSubscriber

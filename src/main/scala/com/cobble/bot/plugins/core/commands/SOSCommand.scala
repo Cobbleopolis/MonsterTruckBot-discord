@@ -2,7 +2,8 @@ package com.cobble.bot.plugins.core.commands
 
 import com.cobble.bot.MonsterTruckBot
 import com.cobble.bot.api.Command
-import com.cobble.bot.util.{DBUtil, MessageUtil}
+import com.cobble.bot.util.MessageUtil
+import com.cobble.bot.util.db.CoreSettingsUtil
 import sx.blah.discord.handle.obj.{IGuild, IMessage, IUser}
 
 import scala.collection.JavaConverters._
@@ -37,7 +38,7 @@ class SOSCommand extends Command {
             if (args.nonEmpty)
                 sosTextBuilder.append(s"\n\t**SOS Message:** ${args.mkString(" ")}")
             val sosText: String = sosTextBuilder.toString
-            DBUtil.getBotInstanceById(guild.getID).onComplete {
+            CoreSettingsUtil.getCoreSettingsById(guild.getID).onComplete {
                 case Success(maybeBotInstance) =>
                     if (maybeBotInstance.isDefined) {
                         val maybeModeratorRoleId: Option[String] = maybeBotInstance.get.moderatorRoleId
