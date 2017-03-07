@@ -36,7 +36,7 @@ object CorePlugin {
     val sosCommand: SOSCommand = new SOSCommand
 
     /**
-      * An instance of the [[SetModRoleCommand]]
+      * An instance of the [[commands.SetModRoleCommand]]
       */
     val setModRoleCommand: SetModRoleCommand = new SetModRoleCommand
 }

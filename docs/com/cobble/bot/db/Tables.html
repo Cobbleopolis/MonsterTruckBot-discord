@@ -236,28 +236,10 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.cobble.bot.db.Tables.BotInstance" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="BotInstanceextendsProductwithSerializable"></a><a id="BotInstance:BotInstance"></a>
+              <ol><li name="com.cobble.bot.db.Tables.BotInstances" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BotInstancesextendsTables.this.profile.api.Table[Tables.this.BotInstancesRow]"></a><a id="BotInstances:BotInstances"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/db/Tables.html#BotInstanceextendsProductwithSerializable" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a title="Entity class storing rows of table BotInstances" href="Tables$BotInstance.html">
-              <span class="name">BotInstance</span>
-            </a><span class="params">(<span name="guildId">guildId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="moderatorRoleId">moderatorRoleId: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Entity class storing rows of table BotInstances</p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table BotInstances</p></div><dl class="paramcmts block"><dt class="param">guildId</dt><dd class="cmt"><p>Database column guild_id SqlType(varchar), PrimaryKey, Length(256,true)</p></dd><dt class="param">moderatorRoleId</dt><dd class="cmt"><p>Database column moderator_role_id SqlType(varchar), Length(256,true), Default(None)</p></dd></dl></div>
-    </li><li name="com.cobble.bot.db.Tables.BotInstances" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="BotInstancesextendsTables.this.profile.api.Table[Tables.this.BotInstance]"></a><a id="BotInstances:BotInstances"></a>
-      <span class="permalink">
-      <a href="../../../../com/cobble/bot/db/Tables.html#BotInstancesextendsTables.this.profile.api.Table[Tables.this.BotInstance]" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables.html#BotInstancesextendsTables.this.profile.api.Table[Tables.this.BotInstancesRow]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -268,10 +250,64 @@
       <span class="symbol">
         <a title="Table description of table bot_instances." href="Tables$BotInstances.html">
               <span class="name">BotInstances</span>
-            </a><span class="result"> extends <span class="extype" name="slick.relational.RelationalProfile.API.Table">slick.jdbc.JdbcProfile.API.Table</span>[<a href="Tables$BotInstance.html" class="extype" name="com.cobble.bot.db.Tables.BotInstance">BotInstance</a>]</span>
+            </a><span class="result"> extends <span class="extype" name="slick.relational.RelationalProfile.API.Table">slick.jdbc.JdbcProfile.API.Table</span>[<a href="Tables$BotInstancesRow.html" class="extype" name="com.cobble.bot.db.Tables.BotInstancesRow">BotInstancesRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Table description of table bot_instances.</p><div class="fullcomment"><div class="comment cmt"><p>Table description of table bot_instances. Objects of this class serve as prototypes for rows in queries.</p></div></div>
+    </li><li name="com.cobble.bot.db.Tables.BotInstancesRow" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BotInstancesRowextendsProductwithSerializable"></a><a id="BotInstancesRow:BotInstancesRow"></a>
+      <span class="permalink">
+      <a href="../../../../com/cobble/bot/db/Tables.html#BotInstancesRowextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Entity class storing rows of table BotInstances" href="Tables$BotInstancesRow.html">
+              <span class="name">BotInstancesRow</span>
+            </a><span class="params">(<span name="guildId">guildId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="twitchAccount">twitchAccount: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Entity class storing rows of table BotInstances</p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table BotInstances</p></div><dl class="paramcmts block"><dt class="param">guildId</dt><dd class="cmt"><p>Database column guild_id SqlType(varchar), PrimaryKey, Length(256,true)</p></dd><dt class="param">twitchAccount</dt><dd class="cmt"><p>Database column twitch_account SqlType(varchar), Length(25,true), Default(None)</p></dd></dl></div>
+    </li><li name="com.cobble.bot.db.Tables.CoreSettings" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CoreSettingsextendsTables.this.profile.api.Table[Tables.this.CoreSettingsRow]"></a><a id="CoreSettings:CoreSettings"></a>
+      <span class="permalink">
+      <a href="../../../../com/cobble/bot/db/Tables.html#CoreSettingsextendsTables.this.profile.api.Table[Tables.this.CoreSettingsRow]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Table description of table core_settings." href="Tables$CoreSettings.html">
+              <span class="name">CoreSettings</span>
+            </a><span class="result"> extends <span class="extype" name="slick.relational.RelationalProfile.API.Table">slick.jdbc.JdbcProfile.API.Table</span>[<a href="Tables$CoreSettingsRow.html" class="extype" name="com.cobble.bot.db.Tables.CoreSettingsRow">CoreSettingsRow</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Table description of table core_settings.</p><div class="fullcomment"><div class="comment cmt"><p>Table description of table core_settings. Objects of this class serve as prototypes for rows in queries.</p></div></div>
+    </li><li name="com.cobble.bot.db.Tables.CoreSettingsRow" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CoreSettingsRowextendsProductwithSerializable"></a><a id="CoreSettingsRow:CoreSettingsRow"></a>
+      <span class="permalink">
+      <a href="../../../../com/cobble/bot/db/Tables.html#CoreSettingsRowextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Entity class storing rows of table CoreSettings" href="Tables$CoreSettingsRow.html">
+              <span class="name">CoreSettingsRow</span>
+            </a><span class="params">(<span name="guildId">guildId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="moderatorRoleId">moderatorRoleId: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Entity class storing rows of table CoreSettings</p><div class="fullcomment"><div class="comment cmt"><p>Entity class storing rows of table CoreSettings</p></div><dl class="paramcmts block"><dt class="param">guildId</dt><dd class="cmt"><p>Database column guild_id SqlType(varchar), PrimaryKey, Length(256,true)</p></dd><dt class="param">moderatorRoleId</dt><dd class="cmt"><p>Database column moderator_role_id SqlType(varchar), Length(256,true), Default(None)</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -363,10 +399,26 @@
       </span>
       
       <p class="shortcomment cmt">Collection-like TableQuery object for table BotInstances</p>
-    </li><li name="com.cobble.bot.db.Tables#GetResultBotInstancesRow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetResultBotInstancesRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]]):slick.jdbc.GetResult[Tables.this.BotInstance]"></a><a id="GetResultBotInstancesRow(GetResult[String],GetResult[Option[String]]):GetResult[BotInstance]"></a>
+    </li><li name="com.cobble.bot.db.Tables#CoreSettings" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CoreSettings:slick.lifted.TableQuery[Tables.this.CoreSettings]"></a><a id="CoreSettings:TableQuery[CoreSettings]"></a>
       <span class="permalink">
-      <a href="../../../../com/cobble/bot/db/Tables.html#GetResultBotInstancesRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]]):slick.jdbc.GetResult[Tables.this.BotInstance]" title="Permalink">
+      <a href="../../../../com/cobble/bot/db/Tables.html#CoreSettings:slick.lifted.TableQuery[Tables.this.CoreSettings]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CoreSettings</span><span class="result">: <span class="extype" name="slick.lifted.TableQuery">TableQuery</span>[<a href="Tables$CoreSettings.html" class="extype" name="com.cobble.bot.db.Tables.CoreSettings">CoreSettings</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Collection-like TableQuery object for table CoreSettings</p>
+    </li><li name="com.cobble.bot.db.Tables#GetResultBotInstancesRow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetResultBotInstancesRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]]):slick.jdbc.GetResult[Tables.this.BotInstancesRow]"></a><a id="GetResultBotInstancesRow(GetResult[String],GetResult[Option[String]]):GetResult[BotInstancesRow]"></a>
+      <span class="permalink">
+      <a href="../../../../com/cobble/bot/db/Tables.html#GetResultBotInstancesRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]]):slick.jdbc.GetResult[Tables.this.BotInstancesRow]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -375,10 +427,26 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetResultBotInstancesRow</span><span class="params">(<span class="implicit">implicit </span><span name="e0">e0: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e1">e1: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result">: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="Tables$BotInstance.html" class="extype" name="com.cobble.bot.db.Tables.BotInstance">BotInstance</a>]</span>
+        <span class="name">GetResultBotInstancesRow</span><span class="params">(<span class="implicit">implicit </span><span name="e0">e0: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e1">e1: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result">: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="Tables$BotInstancesRow.html" class="extype" name="com.cobble.bot.db.Tables.BotInstancesRow">BotInstancesRow</a>]</span>
       </span>
       
       <p class="shortcomment cmt">GetResult implicit for fetching BotInstancesRow objects using plain SQL queries</p>
+    </li><li name="com.cobble.bot.db.Tables#GetResultCoreSettingsRow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetResultCoreSettingsRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]]):slick.jdbc.GetResult[Tables.this.CoreSettingsRow]"></a><a id="GetResultCoreSettingsRow(GetResult[String],GetResult[Option[String]]):GetResult[CoreSettingsRow]"></a>
+      <span class="permalink">
+      <a href="../../../../com/cobble/bot/db/Tables.html#GetResultCoreSettingsRow(implicite0:slick.jdbc.GetResult[String],implicite1:slick.jdbc.GetResult[Option[String]]):slick.jdbc.GetResult[Tables.this.CoreSettingsRow]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">GetResultCoreSettingsRow</span><span class="params">(<span class="implicit">implicit </span><span name="e0">e0: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e1">e1: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result">: <span class="extype" name="slick.jdbc.GetResult">GetResult</span>[<a href="Tables$CoreSettingsRow.html" class="extype" name="com.cobble.bot.db.Tables.CoreSettingsRow">CoreSettingsRow</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">GetResult implicit for fetching CoreSettingsRow objects using plain SQL queries</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">

@@ -11,7 +11,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.{Failure, Success}
 
 /**
-  * The SOSCommand class, this implements the [[Command]] trait.
+  * The SOSCommand class, this implements the [[com.cobble.bot.api.Command]] trait.
   *
   * @author Cobbleopolis
   * @version 1.0.0

@@ -7,7 +7,7 @@ import scala.collection.JavaConverters._
 import scala.collection.mutable
 
 /**
-  * The PingCommand class, this implements the [[Command]] trait.
+  * The PingCommand class, this implements the [[com.cobble.bot.api.Command]] trait.
   *
   * @author Cobbleopolis
   * @version 1.0.0

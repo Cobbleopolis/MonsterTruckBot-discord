@@ -7,7 +7,7 @@ import sx.blah.discord.handle.obj.IMessage
 import sx.blah.discord.util.MessageBuilder
 
 /**
-  * The HelpCommand class, this implements the [[Command]] trait.
+  * The HelpCommand class, this implements the [[com.cobble.bot.api.Command]] trait.
   *
   * @author Cobbleopolis
   * @version 1.0.0

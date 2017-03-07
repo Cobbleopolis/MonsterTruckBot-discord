@@ -12,7 +12,7 @@ object BotInstanceUtil {
       * Gets a guild from its id.
       *
       * @param guildId The id of the guild to get.
-      * @return A [[scala.concurrent.Future]] that optionally returns an [[com.cobble.bot.db.Tables#BotInstance]] that has the provided id. If the provided id does not match any entries [[scala.None]] is returned.
+      * @return A [[scala.concurrent.Future]] that optionally returns an [[com.cobble.bot.db.Tables#BotInstancesRow]] that has the provided id. If the provided id does not match any entries [[scala.None]] is returned.
       */
     def getBotInstanceById(guildId: String): Future[Option[BotInstancesRow]] = {
         db.run(
@@ -21,10 +21,10 @@ object BotInstanceUtil {
     }
 
     /**
-      * Batch inserts [[com.cobble.bot.db.Tables#BotInstance]]s.
+      * Batch inserts [[com.cobble.bot.db.Tables#BotInstancesRow]]s.
       *
-      * @param botInstances The [[com.cobble.bot.db.Tables#BotInstance]]s to insert.
-      * @return A [[scala.concurrent.Future]] that inserts the passed [[com.cobble.bot.db.Tables#BotInstance]]s.
+      * @param botInstances The [[com.cobble.bot.db.Tables#BotInstancesRow]]s to insert.
+      * @return A [[scala.concurrent.Future]] that inserts the passed [[com.cobble.bot.db.Tables#BotInstancesRow]]s.
       */
     def insertBotInstances(botInstances: BotInstancesRow*): Future[Option[Int]] = {
         db.run(

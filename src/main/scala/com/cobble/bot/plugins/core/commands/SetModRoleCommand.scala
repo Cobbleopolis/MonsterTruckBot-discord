@@ -10,7 +10,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.{Failure, Success}
 
 /**
-  * The SetModRoleCommand class, this implements the [[Command]] trait.
+  * The SetModRoleCommand class, this implements the [[com.cobble.bot.api.Command]] trait.
   *
   * This will set the mod role for the guild it is called in.
   *

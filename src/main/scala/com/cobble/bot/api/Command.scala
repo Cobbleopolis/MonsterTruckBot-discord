@@ -32,7 +32,7 @@ trait Command {
     /**
       * Gives a brief description of what the command does.
       *
-      * This is displayed in the [[HelpCommand]] when it is given no arguments.
+      * This is displayed in the [[com.cobble.bot.plugins.core.commands.HelpCommand]] when it is given no arguments.
       */
     val briefHelpText: String
 
