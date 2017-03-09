@@ -61,3 +61,5 @@ apiMappings ++= {
 }
 
 scalaVersion := "2.12.1"
+
+enablePlugins(BuildInfoPlugin)
