@@ -23,6 +23,7 @@ This list is in no particular order of priority
 
 ### Core Plugin
 
+- [ ] Version command
 - [x] Ping command
 - [x] Help command
 - [x] SOS command 
