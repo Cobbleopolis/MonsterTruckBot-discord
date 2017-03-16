@@ -1,7 +1,10 @@
 package com.cobble.bot.plugins.core
 
-import com.cobble.bot.api.{Command, Plugin}
+import com.cobble.bot.api.{Command, Plugin, Setting}
 import com.cobble.bot.plugins.core.commands._
+import com.cobble.bot.plugins.core.settings.ModRoleSetting
+
+import scala.concurrent.Future
 
 class CorePlugin extends Plugin {
 
@@ -14,9 +17,13 @@ class CorePlugin extends Plugin {
         CorePlugin.pingCommand,
         CorePlugin.helpCommand,
         CorePlugin.sosCommand,
-        CorePlugin.setModRoleCommand
+        CorePlugin.setModRoleCommand,
+        CorePlugin.configCommand
     )
 
+    override val settings: Seq[Setting[_]] = Seq(
+        new ModRoleSetting
+    )
 }
 
 object CorePlugin {
@@ -45,4 +52,9 @@ object CorePlugin {
       * An instance of the [[commands.SetModRoleCommand]]
       */
     val setModRoleCommand: SetModRoleCommand = new SetModRoleCommand
+
+    /**
+      * An instance of the [[commands.ConfigCommand]]
+      */
+    val configCommand: ConfigCommand = new ConfigCommand
 }

@@ -1,5 +1,7 @@
 package com.cobble.bot.api
 
+import scala.concurrent.Future
+
 /**
   * A trait that should be implemented by any plugin that is going to be used by the bot.
   *
@@ -23,5 +25,7 @@ trait Plugin {
       * A list of commands that will be registered when the plugin loads.
       */
     val commands: Seq[Command]
+
+    val settings: Seq[Setting[_]]
 
 }
